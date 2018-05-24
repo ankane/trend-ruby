@@ -1,44 +1,27 @@
 require_relative "test_helper"
 
 class TrendTest < Minitest::Test
-  def test_dates
+  def test_anomalies
     series = {}
-    date = Date.parse("2018-01-01")
+    date = Date.parse("2018-04-01")
     28.times do
-      series[date] = date.wday
+      series[date] = rand(100)
       date += 1
     end
-    series[date - 1] = 2
-    # p date - 1
-    # p series
+    series[date - 8] = 999
 
-    puts Trend.anomalies(series).to_json
-    puts Trend.forecast(series).to_json
-    puts Trend.forecast(series, count: 1).to_json
-  end
-
-  def test_times
-    series = {}
-    time = Time.parse("2018-01-01")
-    48.times do
-      series[time] = rand
-      time += 3600
-    end
-    series[time - 3600] = 10
-    # p date - 1
-    # p series
-
-    p Trend.anomalies(series)
-    p Trend.forecast(series, count: 3)
+    assert_equal [Date.parse("2018-04-21")], Trend.anomalies(series)
   end
 
   def test_forecast
     series = {}
-    start_date = Date.parse("2018-01-01")
-    30.times do |i|
-      series[start_date + i] = i + rand
+    date = Date.parse("2018-04-01")
+    28.times do
+      series[date] = date.wday
+      date += 1
     end
 
-    puts Trend.forecast(series).to_json
+    forecast = Trend.forecast(series, count: 7)
+    assert_equal [0, 1, 2, 3, 4, 5, 6], forecast.values
   end
 end
