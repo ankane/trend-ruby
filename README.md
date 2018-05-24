@@ -1,6 +1,6 @@
 # Trend
 
-Ruby client for [Trend](https://trendapi.org), the time series API
+Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecasting API
 
 [![Build Status](https://travis-ci.org/ankane/trend.svg?branch=master)](https://travis-ci.org/ankane/trend)
 
@@ -12,7 +12,7 @@ Add this line to your application’s Gemfile:
 gem 'trend'
 ```
 
-### Anomalies
+### Anomaly Detection
 
 Detect anomalies in a time series
 
