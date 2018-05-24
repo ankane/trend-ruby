@@ -2,6 +2,8 @@
 
 Ruby client for [Trend](https://trendapi.org), the time series API
 
+[![Build Status](https://travis-ci.org/ankane/trend.svg?branch=master)](https://travis-ci.org/ankane/trend)
+
 ## Getting Started
 
 Add this line to your application’s Gemfile:
