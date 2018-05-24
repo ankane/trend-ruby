@@ -38,7 +38,7 @@ series = User.group_by_day(:created_at).count
 Trend.anomalies(series)
 ```
 
-### Forecast
+### Forecasting
 
 Get future predictions for a time series
 
