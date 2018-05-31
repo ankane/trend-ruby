@@ -2,7 +2,8 @@ module Trend
   class Client
     HEADERS = {
       "Content-Type" => "application/json",
-      "Accept" => "application/json"
+      "Accept" => "application/json",
+      "User-Agent" => "trend-ruby/#{Trend::VERSION}"
     }
 
     def initialize(url: nil)
