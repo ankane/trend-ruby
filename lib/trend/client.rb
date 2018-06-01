@@ -1,3 +1,5 @@
+require "trend/version"
+
 module Trend
   class Client
     HEADERS = {
