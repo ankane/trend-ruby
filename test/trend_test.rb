@@ -26,4 +26,33 @@ class TrendTest < Minitest::Test
     forecast = Trend.forecast(series, count: 7)
     assert_equal [0, 1, 2, 3, 4, 5, 6], forecast.values
   end
+
+  def test_correlation
+    series = {}
+    date = Date.parse("2018-04-01")
+    28.times do
+      series[date] = date.wday
+      date += 1
+    end
+
+    series2 = series.dup
+    series2[date - 8] = 10
+
+    correlation = Trend.correlation(series, series2)
+    assert_equal 0.9522, correlation[:score]
+    assert_equal 0, correlation[:lag]
+  end
+
+  def test_correlation_exact
+    series = {}
+    date = Date.parse("2018-04-01")
+    28.times do
+      series[date] = date.wday
+      date += 1
+    end
+
+    correlation = Trend.correlation(series, series)
+    assert_equal 1, correlation[:score]
+    assert_equal 0, correlation[:lag]
+  end
 end

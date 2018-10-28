@@ -66,6 +66,14 @@ Specify the number of predictions to return
 Trend.forecast(series, count: 3)
 ```
 
+## Correlation [master, experimental]
+
+Get correlation between two time series
+
+```ruby
+Trend.correlation(series, series2)
+```
+
 ## History
 
 View the [changelog](https://github.com/ankane/trend/blob/master/CHANGELOG.md)

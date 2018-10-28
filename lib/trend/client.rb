@@ -27,6 +27,11 @@ module Trend
       Hash[resp["forecast"].map { |k, v| [parse_time(k), v] }]
     end
 
+    def correlation(series, series2, params = {})
+      resp = make_request("correlation", series, params.merge(series2: series2))
+      Hash[resp.map { |k, v| [k.to_sym, v] }]
+    end
+
     private
 
     def make_request(path, series, params)

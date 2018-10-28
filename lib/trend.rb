@@ -17,6 +17,10 @@ module Trend
     client.forecast(*args)
   end
 
+  def self.correlation(*args)
+    client.correlation(*args)
+  end
+
   def self.url
     @url ||= ENV["TREND_URL"] || "https://trendapi.org"
   end
