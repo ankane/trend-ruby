@@ -66,13 +66,18 @@ Specify the number of predictions to return
 Trend.forecast(series, count: 3)
 ```
 
-## Correlation [master, experimental]
+### Correlation [master, experimental]
 
-Get correlation between two time series
+Get the correlation between two time series
 
 ```ruby
 Trend.correlation(series, series2)
 ```
+
+Returns
+
+- `score` - between -1 (strong negative correlation) and 1 (strong positive correlation)
+- `lag` - always 0 for now, but may be the highest scoring lag in the future
 
 ## History
 
