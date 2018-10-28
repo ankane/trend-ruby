@@ -74,11 +74,6 @@ Get the correlation between two time series
 Trend.correlation(series, series2)
 ```
 
-Returns
-
-- `score` - between -1 (strong negative correlation) and 1 (strong positive correlation)
-- `lag` - always 0 for now, but may be the highest scoring lag in the future
-
 ## History
 
 View the [changelog](https://github.com/ankane/trend/blob/master/CHANGELOG.md)

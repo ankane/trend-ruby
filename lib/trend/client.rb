@@ -29,7 +29,7 @@ module Trend
 
     def correlation(series, series2, params = {})
       resp = make_request("correlation", series, params.merge(series2: series2))
-      Hash[resp.map { |k, v| [k.to_sym, v] }]
+      resp["correlation"]
     end
 
     private

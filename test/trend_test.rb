@@ -39,8 +39,7 @@ class TrendTest < Minitest::Test
     series2[date - 8] = 10
 
     correlation = Trend.correlation(series, series2)
-    assert_equal 0.9522, correlation[:score]
-    assert_equal 0, correlation[:lag]
+    assert_equal 0.9522, correlation
   end
 
   def test_correlation_exact
@@ -51,8 +50,12 @@ class TrendTest < Minitest::Test
       date += 1
     end
 
+    # test positive
     correlation = Trend.correlation(series, series)
-    assert_equal 1, correlation[:score]
-    assert_equal 0, correlation[:lag]
+    assert_equal 1, correlation
+
+    # test negative
+    correlation = Trend.correlation(series, Hash[series.map { |k, v| [k, -v] }])
+    assert_equal(-1, correlation)
   end
 end
