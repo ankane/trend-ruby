@@ -8,9 +8,9 @@ module Trend
       "User-Agent" => "trend-ruby/#{Trend::VERSION}"
     }
 
-    def initialize(url: nil)
-      url ||= Trend.url
-      @uri = URI.parse(url)
+    def initialize(url: nil, api_key: nil)
+      @api_key = api_key || Trend.api_key
+      @uri = URI.parse(url || Trend.url)
       @http = Net::HTTP.new(@uri.host, @uri.port)
       @http.use_ssl = true if @uri.scheme == "https"
       @http.open_timeout = 3
@@ -33,6 +33,8 @@ module Trend
       post_data = {
         series: series
       }.merge(params)
+
+      path = "#{path}?api_key=#{URI.escape(@api_key)}" if @api_key
 
       begin
         response = @http.post("/#{path}", post_data.to_json, HEADERS)

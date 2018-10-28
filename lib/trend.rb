@@ -26,6 +26,15 @@ module Trend
     @client = nil
   end
 
+  def self.api_key
+    @api_key ||= ENV["TREND_API_KEY"]
+  end
+
+  def self.api_key=(api_key)
+    @api_key = api_key
+    @client = nil
+  end
+
   # private
   def self.client
     @client ||= Client.new
