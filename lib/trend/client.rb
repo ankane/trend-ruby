@@ -39,7 +39,7 @@ module Trend
         series: series
       }.merge(params)
 
-      path = "#{path}?api_key=#{URI.escape(@api_key)}" if @api_key
+      path = "#{path}?#{URI.encode_www_form(api_key: @api_key)}" if @api_key
 
       begin
         response = @http.post("/#{path}", post_data.to_json, HEADERS)
