@@ -1,7 +1,7 @@
-## 0.1.1 [unreleased]
+## 0.1.1
 
-- Added `correlation` method
 - Added support for API keys
+- Added experimental `correlation` method
 
 ## 0.1.0
 
