@@ -76,7 +76,7 @@ Trend.correlation(series, series2)
 
 ## Authentication
 
-An API key is needed for more than 1000 requests per day per IP. [Email us](mailto:hi@trendapi.org) to get one.
+An API key is needed for more than 1,000 requests per day per IP. [Email us](mailto:hi@trendapi.org) to get one.
 
 If you have one, set `ENV["TREND_API_KEY"]` or use:
 
