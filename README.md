@@ -66,12 +66,22 @@ Specify the number of predictions to return
 Trend.forecast(series, count: 3)
 ```
 
-### Correlation [master, experimental]
+### Correlation [experimental]
 
 Get the correlation between two time series
 
 ```ruby
 Trend.correlation(series, series2)
+```
+
+## Authentication
+
+An API key is needed for more than 1000 requests per day per IP. [Email us](mailto:hi@trendapi.org) to get one.
+
+If you have one, set `ENV["TREND_API_KEY"]` or use:
+
+```ruby
+Trend.api_key = "secret"
 ```
 
 ## History
