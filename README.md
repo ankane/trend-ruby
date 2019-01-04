@@ -4,7 +4,7 @@ Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecas
 
 [![Build Status](https://travis-ci.org/ankane/trend.svg?branch=master)](https://travis-ci.org/ankane/trend)
 
-## Getting Started
+## Installation
 
 Add this line to your application’s Gemfile:
 
@@ -12,7 +12,7 @@ Add this line to your application’s Gemfile:
 gem 'trend'
 ```
 
-### Anomaly Detection
+## Anomaly Detection
 
 Detect anomalies in a time series
 
@@ -38,7 +38,7 @@ series = User.group_by_day(:created_at).count
 Trend.anomalies(series)
 ```
 
-### Forecasting
+## Forecasting
 
 Get future predictions for a time series
 
@@ -66,7 +66,7 @@ Specify the number of predictions to return
 Trend.forecast(series, count: 3)
 ```
 
-### Correlation [experimental]
+## Correlation [experimental]
 
 Get the correlation between two time series
 
