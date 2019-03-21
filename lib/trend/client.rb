@@ -8,13 +8,13 @@ module Trend
       "User-Agent" => "trend-ruby/#{Trend::VERSION}"
     }
 
-    def initialize(url: nil, api_key: nil)
+    def initialize(url: nil, api_key: nil, timeout: 30)
       @api_key = api_key || Trend.api_key
       @uri = URI.parse(url || Trend.url)
       @http = Net::HTTP.new(@uri.host, @uri.port)
       @http.use_ssl = true if @uri.scheme == "https"
-      @http.open_timeout = 3
-      @http.read_timeout = 12
+      @http.open_timeout = timeout
+      @http.read_timeout = timeout
     end
 
     def anomalies(series, params = {})

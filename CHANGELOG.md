@@ -1,3 +1,7 @@
+## 0.1.2 [unreleased]
+
+- Added `timeout` option
+
 ## 0.1.1
 
 - Added support for API keys
