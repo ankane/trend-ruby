@@ -12,6 +12,12 @@ Add this line to your application’s Gemfile:
 gem 'trend'
 ```
 
+For the [self-hosted version](https://github.com/ankane/trend-api), create an initializer with:
+
+```ruby
+Trend.url = "http://localhost:8000"
+```
+
 ## Anomaly Detection
 
 Detect anomalies in a time series
@@ -72,16 +78,6 @@ Get the correlation between two time series
 
 ```ruby
 Trend.correlation(series, series2)
-```
-
-## Authentication
-
-An API key is needed for more than 1,000 requests per day per IP. [Email us](mailto:hi@trendapi.org) to get one.
-
-If you have one, set `ENV["TREND_API_KEY"]` or use:
-
-```ruby
-Trend.api_key = "secret"
 ```
 
 ## History
