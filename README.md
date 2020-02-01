@@ -12,7 +12,7 @@ Add this line to your application’s Gemfile:
 gem 'trend'
 ```
 
-For the [self-hosted version](https://github.com/ankane/trend-api), create an initializer with:
+For the [self-hosted API](https://github.com/ankane/trend-api), create an initializer with:
 
 ```ruby
 Trend.url = "http://localhost:8000"
