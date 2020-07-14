@@ -37,7 +37,7 @@ series[date - 8] = 999
 Trend.anomalies(series)
 ```
 
-Works great with libraries like [Groupdate](https://github.com/ankane/groupdate)
+Works great with [Groupdate](https://github.com/ankane/groupdate)
 
 ```ruby
 series = User.group_by_day(:created_at).count
