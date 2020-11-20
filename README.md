@@ -2,7 +2,7 @@
 
 Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecasting API
 
-[![Build Status](https://travis-ci.org/ankane/trend.svg?branch=master)](https://travis-ci.org/ankane/trend)
+[![Build Status](https://github.com/ankane/trend/workflows/build/badge.svg?branch=master)](https://github.com/ankane/trend/actions)
 
 ## Installation
 
