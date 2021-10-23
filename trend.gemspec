@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "trend"
   spec.version       = Trend::VERSION
   spec.summary       = "Ruby client for Trend, the time series API"
-  spec.homepage      = "https://github.com/ankane/trend"
+  spec.homepage      = "https://github.com/ankane/trend-ruby"
   spec.license       = "MIT"
 
   spec.author        = "Andrew Kane"

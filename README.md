@@ -1,8 +1,8 @@
-# Trend
+# Trend Ruby
 
 Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecasting API
 
-[![Build Status](https://github.com/ankane/trend/workflows/build/badge.svg?branch=master)](https://github.com/ankane/trend/actions)
+[![Build Status](https://github.com/ankane/trend-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/trend-ruby/actions)
 
 ## Installation
 
@@ -82,22 +82,22 @@ Trend.correlation(series, series2)
 
 ## History
 
-View the [changelog](https://github.com/ankane/trend/blob/master/CHANGELOG.md)
+View the [changelog](https://github.com/ankane/trend-ruby/blob/master/CHANGELOG.md)
 
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
 
-- [Report bugs](https://github.com/ankane/trend/issues)
-- Fix bugs and [submit pull requests](https://github.com/ankane/trend/pulls)
+- [Report bugs](https://github.com/ankane/trend-ruby/issues)
+- Fix bugs and [submit pull requests](https://github.com/ankane/trend-ruby/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
 
 To get started with development:
 
 ```sh
-git clone https://github.com/ankane/trend.git
-cd trend
+git clone https://github.com/ankane/trend-ruby.git
+cd trend-ruby
 bundle install
 bundle exec rake test
 ```
