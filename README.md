@@ -9,7 +9,7 @@ Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecas
 Add this line to your application’s Gemfile:
 
 ```ruby
-gem 'trend'
+gem "trend"
 ```
 
 For the [self-hosted API](https://github.com/ankane/trend-api), create an initializer with:
