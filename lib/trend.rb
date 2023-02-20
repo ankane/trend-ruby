@@ -1,10 +1,12 @@
+# stdlib
 require "date"
 require "json"
 require "net/http"
 require "time"
 
-require "trend/client"
-require "trend/version"
+# modules
+require_relative "trend/client"
+require_relative "trend/version"
 
 module Trend
   class Error < StandardError; end
