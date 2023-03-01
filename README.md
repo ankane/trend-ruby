@@ -59,7 +59,7 @@ end
 Trend.forecast(series)
 ```
 
-Also works great with Groupdate
+Also works great with [Groupdate](https://github.com/ankane/groupdate)
 
 ```ruby
 series = User.group_by_day(:created_at).count
