@@ -1,6 +1,6 @@
 ## 0.2.0 (unreleased)
 
-- Dropped support for Ruby < 2.7
+- Dropped support for Ruby < 3
 
 ## 0.1.2 (2019-04-10)
 
