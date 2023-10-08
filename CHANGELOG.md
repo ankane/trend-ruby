@@ -1,3 +1,7 @@
+## 0.2.1 (unreleased)
+
+- Added warning about hosted version shutdown
+
 ## 0.2.0 (2023-05-03)
 
 - Dropped support for Ruby < 3

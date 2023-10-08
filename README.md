@@ -1,6 +1,8 @@
 # Trend Ruby
 
-Ruby client for [Trend](https://trendapi.org), the anomaly detection and forecasting API
+Ruby client for [Trend](https://github.com/ankane/trend-api), the anomaly detection and forecasting API
+
+**Note: The [hosted version](https://trendapi.org/) is shutting down on May 1, 2024. [See how to run the API on your own infrastructure.](https://github.com/ankane/trend-api)**
 
 [![Build Status](https://github.com/ankane/trend-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/trend-ruby/actions)
 
@@ -12,7 +14,7 @@ Add this line to your application’s Gemfile:
 gem "trend"
 ```
 
-For the [self-hosted API](https://github.com/ankane/trend-api), create an initializer with:
+And set the URL to the API:
 
 ```ruby
 Trend.url = "http://localhost:8000"
