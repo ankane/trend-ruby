@@ -1,4 +1,4 @@
-## 0.2.1 (unreleased)
+## 0.2.1 (2023-10-08)
 
 - Added warning about hosted version shutdown
 
