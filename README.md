@@ -2,7 +2,7 @@
 
 Ruby client for [Trend](https://github.com/ankane/trend-api), the anomaly detection and forecasting API
 
-**Note: The [hosted version](https://trendapi.org/) is shutting down on May 1, 2024. [See how to run the API on your own infrastructure.](https://github.com/ankane/trend-api)**
+**Note: The [hosted version](https://trendapi.org/) is no longer available. [See how to run the API on your own infrastructure.](https://github.com/ankane/trend-api)**
 
 [![Build Status](https://github.com/ankane/trend-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/trend-ruby/actions)
 
