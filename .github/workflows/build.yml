@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       trend:
-        image: ankane/trend-api
+        image: ankane/trend
         ports:
           - 8000:8000
     steps:
