@@ -27,7 +27,7 @@ Detect anomalies in a time series
 ```ruby
 # generate series
 series = {}
-date = Date.parse("2023-04-01")
+date = Date.parse("2025-01-01")
 28.times do
   series[date] = rand(100)
   date += 1
@@ -52,7 +52,7 @@ Get future predictions for a time series
 
 ```ruby
 series = {}
-date = Date.parse("2023-04-01")
+date = Date.parse("2025-01-01")
 28.times do
   series[date] = date.wday
   date += 1
