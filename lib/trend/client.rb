@@ -10,7 +10,11 @@ module Trend
 
     def initialize(url: nil, api_key: nil, timeout: 30)
       @api_key = api_key || Trend.api_key
-      @uri = URI.parse(url || Trend.url)
+      url ||= Trend.url
+      if !url
+        raise ArgumentError, "Trend url not set"
+      end
+      @uri = URI.parse(url)
       @http = Net::HTTP.new(@uri.host, @uri.port)
       @http.use_ssl = true if @uri.scheme == "https"
       @http.open_timeout = timeout

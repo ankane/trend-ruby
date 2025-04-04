@@ -1,5 +1,6 @@
 ## 0.3.0 (unreleased)
 
+- Removed default url
 - Dropped support for Ruby < 3.2
 
 ## 0.2.1 (2023-10-08)

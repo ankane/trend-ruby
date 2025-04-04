@@ -20,7 +20,7 @@ task :benchmark do
     date += 1
   end
 
-  Trend.url = "http://localhost:8000"
+  Trend.url ||= "http://localhost:8000"
 
   Benchmark.ips do |x|
     x.report("anomalies") { Trend.anomalies(series) }

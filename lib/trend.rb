@@ -24,7 +24,7 @@ module Trend
   end
 
   def self.url
-    @url ||= ENV["TREND_URL"] || hosted_url
+    @url ||= ENV["TREND_URL"]
   end
 
   def self.url=(url)
@@ -44,11 +44,5 @@ module Trend
   # private
   def self.client
     @client ||= Client.new
-  end
-
-  # private
-  def self.hosted_url
-    warn "[trend] WARNING: The hosted version is shutting down on May 1, 2024. See https://github.com/ankane/trend-api for how to run the API on your own infrastructure."
-    "https://trendapi.org"
   end
 end
