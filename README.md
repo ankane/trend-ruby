@@ -74,7 +74,7 @@ Specify the number of predictions to return
 Trend.forecast(series, count: 3)
 ```
 
-## Correlation [experimental]
+## Correlation (Experimental)
 
 Get the correlation between two time series
 
