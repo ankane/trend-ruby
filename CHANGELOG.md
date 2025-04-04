@@ -1,4 +1,4 @@
-## 0.3.0 (unreleased)
+## 0.3.0 (2025-04-03)
 
 - Removed default url
 - Dropped support for Ruby < 3.2
